@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Css\video.css" />
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="/js/vue.js"></script>
+    <title>礼物中心</title>
+  </head>
+  <body background="static\image\pic1.jpg" style="postition: fixed">
+    <section class="public_width">
+      <dl class="video_con">
+        <dt class="video_con_title">To:小磨</dt>
+        <figure class="video_con_show tab">
+          <div class="video_bofang tab-box">
+            <div class="video_con_show_con">
+              <video src="Video/gift.mp4" width="900" height="630" controls></video>
+            </div>
+            <!-- <div class="video_con_show_con">
+              <video width="900" height="630" controls>
+                <source src="Video/vtest2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video_con_show_con">
+              <video width="900" height="630" controls>
+                <source src="Video/vtest3.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video_con_show_con">
+              <video width="900" height="630" controls>
+                <source src="Video/vtest3.mp4" type="video/mp4" />
+              </video>
+            </div> -->
+            <!-- <div class="video_con_show_con">
+              <video width="900" height="630" controls>
+                <source src="Video/vtest2.mp4" type="video/mp4" />
+              </video>
+            </div> -->
+          </div>
+          <figcaption class="video_show_zs">
+            <div class="video_show_zj">
+              <img class="video_show_zj_img" src="static/image/pic1.jpg" />
+              <p class="video_show_zj_js">
+                <b class="video_show_zj_name">礼物中心</b>
+              </p>
+            </div>
+            <span class="video_show_title">礼物列表</span>
+            <ul class="video_show_con tab-menu">
+              <li class="video_show_list"><img src="static/image/words.png" /><span>礼物1</span></li>
+            </ul>
+            <div>
+              <div class="te">
+                <p class="t1" @click="btnInfo">
+                  Ps:有点仓促说实话😭，没整好。。（还是太菜），等学的差不多了💎💎💎下次一定弄个更好的😉（希望你能喜欢呀）
+                </p>
+              </div>
+            </div>
+            <script>
+            function calculateDaysBetweenDates(begin, end) 
+              export default {
+                methods: {
+                  btnInfo() {
+                    alert('点击了元素')
+                  },
+                },
+              }
+            </script>
+            <style>
+              .t1 {
+                width: 283px;
+                min-height: 174px;
+                background: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                font-family: 'Microsoft Yahei';
+                font-weight: 200;
+                font-style: oblique;
+                right: 48px;
+                bottom: 354px;
+              }
+
+              .t1:hover {
+                display: none;
+                width: 283px;
+                min-height: 174px;
+                background: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                font-family: 'Microsoft Yahei';
+                font-weight: 200;
+                font-style: oblique;
+                right: 48px;
+                bottom: 197px;
+              }
+            </style>
+          </figcaption>
+        </figure>
+        <!-- <iframe
+          width="900"
+          height="630"
+          src="//player.bilibili.com/player.html?aid=979390057&bvid=BV1e44y1T7VP&cid=518636661&page=1"
+          scrolling="no"
+          border="0"
+          frameborder="no"
+          framespacing="0"
+          allowfullscreen="true"
+        >
+        </iframe> -->
+      </dl>
+    </section>
+  </body>
+  <script>
+    $().ready(function () {
+      $('.tab-menu li').click(function () {
+        //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+        var _index = $(this).index()
+        //让内容框的第 _index 个显示出来，其他的被隐藏
+        $('.tab-box>div').eq(_index).show().siblings().hide()
+        //改变选中时候的选项框的样式，移除其他几个选项的样式
+        $(this).addClass('change').siblings().removeClass('change')
+      })
+    })
+  </script>
+</html>

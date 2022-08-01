@@ -1,0 +1,12 @@
+{
+  "name": "Web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://codeup.aliyun.com/6256c2d7b2628cbe56b6df16/Web.git",
+  "author": "Lvjinhong <3027026585@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "all": "^0.0.0",
+    "help": "^3.0.2"
+  }
+}

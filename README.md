@@ -1,2 +1,2 @@
-# Best_wishes
-This is a project about wishes
+# 搭建个人网站
+你知道的，我只是为了搭建个网站
